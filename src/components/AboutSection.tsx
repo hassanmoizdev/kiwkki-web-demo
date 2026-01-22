@@ -1,4 +1,8 @@
 import { motion } from "framer-motion";
+import aboutIcon from "@/assets/about-icon.svg";
+import aboutIcon2 from "@/assets/about-icon2.svg";
+import aboutIcon3 from "@/assets/about-icon3.svg";
+import aboutpic from "@/assets/aboutsectionpic.svg";
 
 const AboutSection = () => {
     return (
@@ -67,7 +71,7 @@ const AboutSection = () => {
                             className="relative z-0 w-full flex justify-end lg:-mr-24 xl:-mr-40"
                         >
                             <img
-                                src="/src/assets/aboutsectionpic.svg"
+                                src={aboutpic}
                                 alt="Kwikki App"
                                 className="w-full md:w-[110%] lg:w-[150%] max-w-none h-auto object-contain block origin-bottom-right"
                             />
@@ -81,19 +85,19 @@ const AboutSection = () => {
 
 const features = [
     {
-        icon: "/src/assets/about-icon.svg",
+        icon: aboutIcon,
         title: "Post gigs Fast",
         description:
             "Create and publish job listings in seconds with our intuitive interface.",
     },
     {
-        icon: "/src/assets/about-icon2.svg",
+        icon: aboutIcon2,
         title: "Hire verified workers",
         description:
             "Connect with trusted, verified professionals in your local area.",
     },
     {
-        icon: "/src/assets/about-icon3.svg",
+        icon: aboutIcon3,
         title: "Track jobs easily",
         description:
             "Monitor your gigs in real-time with our simple tracking system.",
