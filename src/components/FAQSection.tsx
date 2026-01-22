@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Minus } from "lucide-react"; // Ensure you have lucide-react installed
+import { Plus, Minus } from "lucide-react";
 import messageboxIcon from "../assets/messagebox.svg";
 
 const FAQSection = () => {
@@ -45,7 +45,10 @@ const FAQSection = () => {
                     </h2>
                 </div>
 
-                <div className="flex flex-col lg:flex-row items-start max-w-7xl mx-auto">
+                {/* UPDATED LINE BELOW: 
+                   Added 'gap-10' and 'justify-between' to create space and push the box right.
+                */}
+                <div className="flex flex-col lg:flex-row items-start justify-between gap-10 lg:gap-12 max-w-7xl mx-auto">
 
                     {/* LEFT COLUMN: FAQ ACCORDION */}
                     <div className="flex-1 w-full space-y-4">
