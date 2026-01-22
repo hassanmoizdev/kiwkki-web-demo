@@ -5,7 +5,6 @@ import playStoreImg from "@/assets/play-store.svg";
 import leftScreen from "@/assets/leftScreen.png";
 import centerScreen from "@/assets/centerScreen.svg";
 import rightScreen from "@/assets/RightScreen.png";
-import heroBg from "@/assets/kwikkibackground.svg";
 
 const ImageWithFallback = ({
     src,
@@ -41,7 +40,7 @@ const DownloadSection = () => {
         <section
             className="relative overflow-hidden pt-16 md:pt-24 pb-0"
             style={{
-                backgroundImage: `url('${heroBg}')`,
+                backgroundImage: `url('/kwikkibackground.svg')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'

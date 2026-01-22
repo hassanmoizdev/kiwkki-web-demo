@@ -1,11 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-
-// Import actual images - will fallback to placeholder if not available
 import phoneMockup from "@/assets/howitwork1.svg";
 import mapPreview from "@/assets/howitwork2.svg";
 import tabsComponent from "@/assets/howitwork3.svg";
-import heroBg from "@/assets/kwikkibackground.svg";
 
 const PlaceholderImage = ({ className, alt }: { className?: string; alt: string }) => (
   <div className={`bg-primary/10 rounded-2xl flex items-center justify-center min-h-[300px] ${className}`}>
@@ -89,25 +86,17 @@ const HowItWorksSection = () => {
               zIndex: index + 1
             }}
           >
-            <motion.div
+            <div
               className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 bg-[hsl(var(--section-light))] pb-24 rounded-t-[3rem]" // Added rounded-t and border
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.7 }}
             >
               {/* Image with Blue Background */}
-              <motion.div
+              <div
                 className="w-full lg:w-1/2 flex"
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.7, delay: 0.2 }}
               >
                 <div
                   className="relative w-full max-w-lg rounded-3xl overflow-hidden hero-gradient flex flex-col justify-end min-h-[400px]"
                   style={{
-                    backgroundImage: `url('${heroBg}')`,
+                    backgroundImage: `url('/kwikkibackground.svg')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
@@ -121,15 +110,11 @@ const HowItWorksSection = () => {
                     />
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Content */}
               <div className="w-full lg:w-1/2">
-                <motion.div
-                  initial={{ opacity: 0, x: 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-100px" }}
-                  transition={{ duration: 0.7, delay: 0.3 }}
+                <div
                   className="lg:pl-8"
                 >
                   <div className="bg-[#007AFF] text-white w-14 h-14 rounded-full flex items-center justify-center text-xl font-bold mb-6 shadow-lg shadow-blue-500/20">
@@ -141,9 +126,9 @@ const HowItWorksSection = () => {
                   <p className="text-muted-foreground text-lg leading-relaxed max-w-lg">
                     {step.description}
                   </p>
-                </motion.div>
+                </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         ))}
       </div>

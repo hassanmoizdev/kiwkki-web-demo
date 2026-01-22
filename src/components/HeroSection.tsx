@@ -8,7 +8,6 @@ import completeJobCard from "@/assets/complete-job-card.svg";
 import halfJobCard from "@/assets/half-job-card.svg";
 import mapsPreview from "@/assets/maps-preview.svg";
 import jobsNavbar from "@/assets/jobs-navbar.svg";
-import heroBg from "@/assets/kwikkibackground.svg";
 
 const PlaceholderImage = ({ className, alt }: { className?: string; alt: string }) => (
   <div className={`bg-white/20 rounded-2xl flex items-center justify-center ${className}`}>
@@ -46,7 +45,7 @@ const HeroSection = () => {
     <section
       className="hero-gradient pt-24 pb-16 md:pb-0 relative overflow-hidden"
       style={{
-        backgroundImage: `url('${heroBg}')`,
+        backgroundImage: `url('/kwikkibackground.svg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
