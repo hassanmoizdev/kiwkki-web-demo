@@ -5,7 +5,7 @@ import playStoreImg from "@/assets/play-store.svg";
 import leftScreen from "@/assets/leftScreen.png";
 import centerScreen from "@/assets/centerScreen.svg";
 import rightScreen from "@/assets/RightScreen.png";
-import heroBg from "@/assets/Kwikki Landing Page.svg";
+import heroBg from "@/assets/kwikkibackground.svg";
 
 const ImageWithFallback = ({
     src,

@@ -8,7 +8,7 @@ import completeJobCard from "@/assets/complete-job-card.svg";
 import halfJobCard from "@/assets/half-job-card.svg";
 import mapsPreview from "@/assets/maps-preview.svg";
 import jobsNavbar from "@/assets/jobs-navbar.svg";
-import heroBg from "@/assets/Kwikki Landing Page.svg";
+import heroBg from "@/assets/kwikkibackground.svg";
 
 const PlaceholderImage = ({ className, alt }: { className?: string; alt: string }) => (
   <div className={`bg-white/20 rounded-2xl flex items-center justify-center ${className}`}>

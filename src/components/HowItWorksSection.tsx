@@ -5,7 +5,7 @@ import { useState } from "react";
 import phoneMockup from "@/assets/howitwork1.svg";
 import mapPreview from "@/assets/howitwork2.svg";
 import tabsComponent from "@/assets/howitwork3.svg";
-import heroBg from "@/assets/Kwikki Landing Page.svg";
+import heroBg from "@/assets/kwikkibackground.svg";
 
 const PlaceholderImage = ({ className, alt }: { className?: string; alt: string }) => (
   <div className={`bg-primary/10 rounded-2xl flex items-center justify-center min-h-[300px] ${className}`}>
